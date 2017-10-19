@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tabellen</title>
+    <title>Übung Tabellen</title>
     <style>
         p {
             font-family: Consolas;
@@ -25,6 +25,7 @@
         td {
             border: 1px solid black;
             border-collapse: collapse;
+            margin-bottom: 5px;
         }
 
         .double_line {
@@ -38,6 +39,20 @@
 
         .links th {
             text-align: left;
+        }
+
+        .aufgabe6 th {
+            background-color: Black;
+            text-align: left;
+            color: white;
+        }
+
+        table#aufgabe6 tr:nth-child(even) {
+            background-color: #BBB;
+        }
+
+        table#aufgabe6 tr:nth-child(odd) {
+            background-color: #EEE;
         }
     </style>
 </head>
@@ -118,38 +133,63 @@
             </tr>
         </table>
     </div>
-
     <div class="rahmen">
         <p>Aufgabe 4</p>
         <table class="links">
-            <thead>
+            <tr>
                 <th>Name</th>
                 <th colspan="2">Telephone</th>
-            </thead>
+            </tr>
             <tr>
                 <td>Bill Gates</td>
                 <td>55577854</td>
-                <td>5557785</td>
+                <td>55577855</td>
             </tr>
         </table>
     </div>
-
     <div class="rahmen">
         <p>Aufgabe 5</p>
         <table class="links">
-            <thead>
-                <th>Name</th>
-                <td>Bill Gates</td>
-            </thead>
             <tr>
-                <th rowspan="2">Telephone</th>
+                <th>Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
                 <td>55577854</td>
             </tr>
             <tr>
-                <td>5557854</td>
+                <td>55577855</td>
             </tr>
         </table>
     </div>
+    <div class="rahmen">
+        <p>Aufgabe 6</p>
+        <table id="aufgabe6" class="aufgabe6">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+    </div>
+
 </body>
 
 </html>
