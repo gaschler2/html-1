@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uebung Max</title>
+    <style>
+        .table1{
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        .table2{
+            border: 3px solid blue;
+        }
+        th{
+            border: 1px solid black;
+            padding: 20px 60px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 20px 60px 20px 5px;
+        }
+        tbody {
+            border: 1px solid black;
+        }
+        .backgroundBlue{
+            background-color: lightblue;
+        }        
+    </style>
+</head>
+
+<body>
+    <h1>Hier kommt eine Tabelle</h1>
+
+    <table class="table1">
+        <thead>
+            <th>Überschrift 1</th>
+            <th>Überschrift 2</th>
+            <th>Überschrift 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eintrag 1</td>
+                <td>Eintrag 2</td>
+                <td>Eintrag 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <table class="table2">
+        <thead>
+            <th>3 Spalten die erste</th>
+            <th class="backgroundBlue">3 Spalten die zweite</th>
+            <th>3 Spalten die dritte</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">row1 Zelle1</td>
+                <td>row1 Zelle2</td>
+            </tr>
+            <tr>
+                <td class="backgroundBlue">row2 Zelle1</td>
+                <td>row2 Zelle2</td>
+                <td>row2 Zelle3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">row3 Zelle 1</td>
+                <td>row3.1 Zelle1</td>
+                <td>row 3.1 Zelle2</td>
+            </tr>
+            <tr>
+                <td>row3.2 Zelle1</td>
+                <td class="backgroundBlue">row3.2 Zelle2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
